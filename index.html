@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calulator</title>
+</head>
+
+<body>
+    
+    <div class="container ">
+        <h1 class="text">May i hlep you to  calculate?</h1>
+        <div class="display">
+            <input class="input" type="text" id="display" readonly>
+        </div>
+        <div class="row">
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button button-color plusslash">/</button>
+        </div>
+        <div class="row">
+            <button class="button ">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button button-color plusstar" onclick="
+            display = display + '*'
+            document.getElementById('display').value = display;
+            ">x</button>
+        </div>
+        <div class="row">
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button button-color plusminus">-</button>
+        </div>
+        <div class="row">
+            <button class="button ">0</button>
+            <button class="button pluspoint">.</button>
+            <button class="button button-color plusequal">=</button>
+            <button class="button button-color plus">+</button>
+        </div>
+        <div class="row remove-text">
+            <button class="button">C</button>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
